@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
     </head>
     <body>
@@ -18,10 +19,11 @@
                     <li>How Can You Help?</li>
                 </ul>
         </div>
+        <img src="filler.png"  class = "image">
         <div class="JunkTab">
-            <form action = "JUNK.PHP" method="post">
+            <form onsubmit = "return doForm()" method="post" id = "form">
                 <label for = "Junk" class = "junkItemInputText">Junk Item:</label>
-                    <select id = "Junk" name = "Junk">
+                    <select id = "Junk" name = "Junk" class = "junkItemInputText">
                         <option value = "Acid">Acid</option>
                         <option value = "Adhesive">Adhesive</option>
                         <option value = "Aluminum">Aluminum</option>
@@ -58,4 +60,11 @@
             </form>
         </div>  
     </body>
+    <script>
+    function doForm () {
+        var data = $('form').serialize();
+        window.location.href = data.substring(5) + ".html";
+        return false;
+      }
+    </script>
 </html>
