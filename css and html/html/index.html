@@ -1,17 +1,17 @@
 <!DOCTYPE html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <link rel = "stylesheet" type = "text/css" href = "../css/style.css">
     </head>
     <body>
         <div class = "topLinks"> 
-            <a href = "google.com" class = "aboutMe">
+            <a href = "../html/AboutMe.html" class = "aboutMe">
                 About Me
             </a>
             <a href = "https://github.com/bossmaster217" class = "github">
                 My Github
             </a>
-            <a href = "google.com" class = "sources">
+            <a href = "https://www.google.com" class = "sources">
                 Sources Used
             </a>
         </div>
@@ -26,13 +26,22 @@
             <h3 class = "textJunkListTitle">Helpful Fallout Glitches/Tips</h3>
                 <ul style = "list-style-type:circle" class = textJunkListTab>
                     <li>Infinite Cap Glitch</li>
+                </ul>
+                <ul style = "list-style-type:circle" class = textJunkListTab>
                     <li>Infinite Item/SPECIAL Glitch</li>
+                </ul>
+                <ul style = "list-style-type:circle" class = textJunkListTab>
                     <li>Useful Websites</li>
+                </ul>
+                <ul style = "list-style-type:circle" class = textJunkListTab>
                     <li>About This Website</li>
+                </ul>
+                <ul style = "list-style-type:circle" class = textJunkListTab>
                     <li>How Can You Help?</li>
                 </ul>
         </div>
-        <img src="filler.png"  class = "image">
+        <img src="../images/filler.png"  class = "leftImage">
+        <img src="../images/filler2.png"  class = "rightImage">
         <div class="JunkTab">
             <form onsubmit = "return doForm()" method="post" id = "form">
                 <label for = "Junk" class = "junkItemInputText">Junk Item:</label>
@@ -76,7 +85,7 @@
     <script>
     function doForm () {
         var data = $('form').serialize();
-        window.location.href = data.substring(5) + ".html";
+        window.location.href = "../html/" + data.substring(5) + ".html";
         return false;
       }
     </script>
