@@ -1,0 +1,56 @@
+body {
+    background-image: url('../images/back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.title {
+    display: grid;
+    background-color: gray;
+    border: 20px solid gray;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    padding: 0;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.textTableHeader {
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2vw;
+    width:2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.textTableText {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2vw;
+    width:2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.TableTab {
+    display: inline-block;
+    background-color: gray;
+    border-style: groove;
+    border-width: thick;
+    border-radius: 5vw;
+    padding-bottom: 3%;
+    padding-right: 2vw;
+}
