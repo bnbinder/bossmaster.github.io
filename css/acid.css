@@ -27,22 +27,22 @@ body {
     font-style: italic;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1vw;
     width:2vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .textTableText {
     font-family: Arial;
     font-style: italic;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1vw;
     width:2vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .TableTab {
@@ -52,5 +52,14 @@ body {
     border-width: thick;
     border-radius: 5vw;
     padding-bottom: 3%;
-    padding-right: 2vw;
+}
+
+.showButton{
+    font-size: 2vw;
+    width: 22vw;
+}
+
+.showButtons{
+justify-content: center;    
+display: flex;
 }

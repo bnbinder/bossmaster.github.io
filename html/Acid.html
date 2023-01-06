@@ -11,134 +11,141 @@
             </h1>
         </div>
         <hr style="height:20px;border-width:0;color:black;background-color:black;">
+        <div class = "showButtons">
+            <button onclick="toggleRow('Commonwealth', 'HideCommonwealth')" class = "showButton" id = "HideCommonwealth">Hide Commonwealth</button>
+            <button onclick="toggleRow('FarHarbor', 'HideFarHarbor')" class = "showButton" id = "HideFarHarbor">Hide Far Harbor</button>
+            <button onclick="toggleRow('NukaWorld', 'HideNukaWorld')" class = "showButton" id = "HideNukaWorld">Hide Nuka World</button>
+            <button onclick="toggleRow('Automatron', 'HideAutomatron')" class = "showButton" id = "HideAutomatron">Hide Automatron</button>
+        </div>
+        <br>
         <table class="TableTab">
             <tr class = "TableRow">
-                <th class = "textTableHeader">Location</th>
-                <th class = "textTableHeader">Form</th>
-                <th class = "textTableHeader">Amount</th>
-                <th class = "textTableHeader">DLC</th>
+                <th class = "textTableHeaderLocation">Location</th>
+                <th class = "textTableHeaderForm">Form</th>
+                <th class = "textTableHeaderAmount">Amount</th>
+                <th class = "textTableHeaderDLC">DLC</th>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Bunker Hill / County Crossing, The Slog / Northeastern Commonwealth</td>
                 <td class = "textTableText">Doc Weathers, 25 Acid Shipments</td>
                 <td class = "textTableText">25-???</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Bunker Hill</td>
                 <td class = "textTableText">Kay, 25 Acid Shipments</td>
                 <td class = "textTableText">25-???</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Charlestown Laundry</td>
                 <td class = "textTableText">18 Abraxo Cleaner</td>
                 <td class = "textTableText">18</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Vault 81</td>
                 <td class = "textTableText">17 Undamaged Abraxo Cleaner</td>
                 <td class = "textTableText">17</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Fort Hagen</td>
                 <td class = "textTableText">14 Abraxo Cleaner</td>
                 <td class = "textTableText">14</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Greentech Genetics</td>
                 <td class = "textTableText">12 Abraxo Cleaner</td>
                 <td class = "textTableText">12</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Vault 114</td>
                 <td class = "textTableText">9 Undamaged Abraxo Cleaner</td>
                 <td class = "textTableText">9</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Vault 95</td>
                 <td class = "textTableText">8 Abraxo Cleaner</td>
                 <td class = "textTableText">8</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">The Dig</td>
                 <td class = "textTableText">7 Abraxo Cleaner</td>
                 <td class = "textTableText">7</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Marowski's Chem Lab</td>
                 <td class = "textTableText">6 Abraxo Cleaner</td>
                 <td class = "textTableText">6</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "FarHarbor">
                 <td class = "textTableText">Vault 118</td>
                 <td class = "textTableText">3 Undamaged Abraxo Cleaner</td>
                 <td class = "textTableText">3</td>
                 <td class = "textTableText">Far Harbor</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Poseidon Energy</td>
                 <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">4</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Poseidon Energy</td>
                 <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">4</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Parsons State Insane Asylum</td>
                 <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">4</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">West Roxbury Station</td>
                 <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">4</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Faneuil Hall</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Sandy Coves Convalescent Home</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Cambridge Campus Diner</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Red Rocket West Of Quincy</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Suffolk County Charter School</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
-            <tr>
+            <tr id = "Commonwealth">
                 <td class = "textTableText">Super Duper Mart</td>
                 <td class = "textTableText">1 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">2</td>
@@ -147,4 +154,6 @@
         </table>
         </div>
     </body>
+
+    <script src="../javascript/acid.js"></script>
 </html>
