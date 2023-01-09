@@ -19,30 +19,66 @@ body {
     font-family: Arial;
     font-style: italic;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: clamp(20px, 3vw, 3vw);
 }
 
-.textTableHeader {
+.textTableHeaderLocation {
     font-family: Arial;
     font-style: italic;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: clamp(10px, 1vw, 1vw);
     width:2vw;
-    padding-bottom: 3vw;
+    padding-bottom: 2vw;
     padding-left: 3vw;
-    padding-right: 3vw;
+    padding-right: 2vw;
+}
+
+.textTableHeaderForm {
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px, 1vw, 1vw);
+    width:2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.textTableHeaderAmount {
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px, 1vw, 1vw);
+    width:2vw;
+    padding-bottom: 2vw;
+    padding-left: 1vw;
+    padding-right: 2vw;
+}
+
+.textTableHeaderDLC {
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: clamp(10px, 1vw, 1vw);
+    width:2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .textTableText {
     font-family: Arial;
     font-style: italic;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: clamp(10px, 1vw, 1vw);
     width:2vw;
-    padding-bottom: 1vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .TableTab {
@@ -54,6 +90,11 @@ body {
     padding-bottom: 3%;
 }
 
+.TableDiv{
+    display: flex;
+    justify-content: center;
+}
+
 .showButton{
     font-size: 2vw;
     width: 22vw;
@@ -62,4 +103,14 @@ body {
 .showButtons{
 justify-content: center;    
 display: flex;
+}
+
+.map{
+    justify-content: center;
+    display: flex;
+}
+
+#map{
+    width:50%;
+    height:50%;
 }

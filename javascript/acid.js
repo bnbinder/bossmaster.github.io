@@ -21,4 +21,6 @@ function toggleRow(rowId, buttonId) {
     {
         button.innerHTML = "Hide" + button.innerHTML.substring(4);
     }
+
+    
 }

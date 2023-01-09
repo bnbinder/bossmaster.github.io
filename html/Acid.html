@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <link rel = "stylesheet" type = "text/css" href = "../css/acid.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
     </head>
 
     <body>
@@ -17,13 +18,20 @@
             <button onclick="toggleRow('NukaWorld', 'HideNukaWorld')" class = "showButton" id = "HideNukaWorld">Hide Nuka World</button>
             <button onclick="toggleRow('Automatron', 'HideAutomatron')" class = "showButton" id = "HideAutomatron">Hide Automatron</button>
         </div>
+        <div class = map>
+            <img id = "map" src = "../images/map.png" usemap="#mapFunc">
+        </div>
+        <map name="mapFunc">
+            <area shape="rect" coords="0,0,20,20" onclick="mapFunc()">
+        </map>
         <br>
+        <div class = TableDiv>
         <table class="TableTab">
             <tr class = "TableRow">
-                <th class = "textTableHeaderLocation">Location</th>
-                <th class = "textTableHeaderForm">Form</th>
-                <th class = "textTableHeaderAmount">Amount</th>
-                <th class = "textTableHeaderDLC">DLC</th>
+                <td class = "textTableHeaderLocation">Location</th>
+                <td class = "textTableHeaderForm">Form</th>
+                <td class = "textTableHeaderAmount">Amount</th>
+                <td class = "textTableHeaderDLC">DLC</th>
             </tr>
             <tr id = "Commonwealth">
                 <td class = "textTableText">Bunker Hill / County Crossing, The Slog / Northeastern Commonwealth</td>
@@ -98,12 +106,6 @@
                 <td class = "textTableText">N/A</td>
             </tr>
             <tr id = "Commonwealth">
-                <td class = "textTableText">Poseidon Energy</td>
-                <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
-                <td class = "textTableText">4</td>
-                <td class = "textTableText">N/A</td>
-            </tr>
-            <tr id = "Commonwealth">
                 <td class = "textTableText">Parsons State Insane Asylum</td>
                 <td class = "textTableText">2 Abraxo Cleaner Industrial Grade</td>
                 <td class = "textTableText">4</td>
@@ -151,9 +153,45 @@
                 <td class = "textTableText">2</td>
                 <td class = "textTableText">N/A</td>
             </tr>
+
+
+
+            <tr id = "Commonwealth">
+                <td class = "textTableText">Boston Airport Ruins</td>
+                <td class = "textTableText">4 Anti Freeze Bottles</td>
+                <td class = "textTableText">8</td>
+                <td class = "textTableText">N/A</td>
+            </tr>
+            <tr id = "Commonwealth">
+                <td class = "textTableText">Red Rocket North Of Wilson Atomatoys Factory</td>
+                <td class = "textTableText">4 Anti Freeze Bottles</td>
+                <td class = "textTableText">8</td>
+                <td class = "textTableText">N/A</td>
+            </tr>
+            <tr id = "Commonwealth">
+                <td class = "textTableText">Jamaica Plains</td>
+                <td class = "textTableText">3 Anti Freeze Bottles</td>
+                <td class = "textTableText">6</td>
+                <td class = "textTableText">N/A</td>
+            </tr>
+            <tr id = "Commonwealth">
+                <td class = "textTableText">Saugus Ironworks</td>
+                <td class = "textTableText">2 Anti Freeze Bottles</td>
+                <td class = "textTableText">4</td>
+                <td class = "textTableText">N/A</td>
+            </tr>
         </table>
         </div>
     </body>
 
     <script src="../javascript/acid.js"></script>
+    <script>
+   $(document).ready(function() {
+    $("img").on("click", function(event) {
+        var x = event.pageX - this.offsetLeft;
+        var y = event.pageY - this.offsetTop;
+        console.log("X Coordinate: " + x + " Y Coordinate: " + y);
+    });
+});
+    </script>
 </html>
